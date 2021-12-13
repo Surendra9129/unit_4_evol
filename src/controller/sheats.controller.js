@@ -12,10 +12,7 @@ router.get('/',async(req,res)=>{
     res.send(new_sheat);
 });
 
-router.get('/nearest',async(req,res)=>{
-    const new_sheat=await sheat.find({}).lean().exec();
-    res.send(new_sheat);
-});
+
 
 
 module.exports=router;
